@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>One / Two way data binding</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body ng-controller="appController as vm">
+	<section>
+		<div class="container">
+			<h1>One / Two way data binding</h1>
+			  <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Digite seu nome" ng-model="vm.nickname">
+	      </div>
+				<h6>{{ ::vm.name }} - {{ vm.nickname }}</h6>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>	
+	<script src="appController.js"></script>	
+</body>
+</html>
