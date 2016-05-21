@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Directives</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body ng-controller="appController as vm">
+	<section>
+		<div class="container">
+			<user-card user="vm.user"></user-card>
+		</div>
+	</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>	
+	<script src="userCard.js"></script>	
+	<script src="appController.js"></script>	
+</body>
+</html>
