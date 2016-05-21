@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Login directive</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+	<section>
+		<div class="container">
+			<h1 class="text-center">Login</h1>
+			<div class="form-group">
+				<div class="input-group input-group-lg">
+				  <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-user"></span></span>
+				  <input type="email" class="form-control" placeholder="Username" ng-model="email">
+				</div>
+			</div>
+			<div class="form-group">	
+				<div class="input-group input-group-lg">
+				  <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+				  <input type="password" class="form-control" placeholder="Password" ng-model="senha">
+				</div>
+			</div>
+			<div class="btn-group col-md-1 col-md-offset-11">
+				<button login  email="{{ email }}" senha="{{ senha }}" type="button" class="btn btn-success">Salvar</button>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>	
+	<script src="login.js"></script>
+</body>
+</html>
